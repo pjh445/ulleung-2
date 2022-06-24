@@ -1,0 +1,223 @@
+@charset   "utf-8"; 
+
+* {
+		margin:0;
+		padding:0; 
+		box-sizing:border-box;
+}
+html,body {
+		 font:10pt/180% "맑은 고딕","돋움"; 
+		color:#333;
+}
+img {
+		max-width:100%; 
+		 display:block;
+}
+a {
+		text-decoration:none;
+		color:#333;
+}
+
+#layout {
+			 width:1200px; 			
+			margin:auto; 
+}
+
+/*******상단*******/
+header {
+			/* max-width:1200px;  */
+			display:flex;
+			align-items:center;
+}
+header h1 {
+			 flex:1; 			 
+			padding:50px; 
+}
+header h1 a {
+			/* display:block; */
+}
+
+/*메뉴*/
+nav {
+		flex:1;
+		/* display:flex; */
+		/* align-items:flex-end; */		
+}
+nav a {			
+			 /*flex:1; */
+			color:black;
+			/* text-align:center;  */
+			padding:15px 20px;
+			/* margin-bottom:30px;  */
+			font-weight:bold;
+			font-size:1.15rem;
+			border:3px solid transparent; 
+}
+nav a:hover, 
+nav a.active {
+					border:3px solid #c8ddf8; 
+					border-radius:5px;
+}
+
+/*******비주얼 이미지*******/
+#visual 	{
+					/* position:relative; */
+					-webkit-mask-image: url(../images/mask.png);
+					mask-image: url(../images/mask.png);
+}
+#visual img {
+					 width:100%; 
+					/* display:block; */
+}
+
+
+/*******메인*******/
+main {
+			display:flex;
+			margin:40px 0;
+}
+main>section {}
+main>section:not(:last-child) {
+				margin-right:30px;
+}
+main h2 {
+				display:inline-block;
+				border:1px solid red; 
+				color:red;
+				padding:3px 7px;
+				font-size:1.1rem;
+}
+
+/*******여행 꿀팁*******/
+#tip {
+		flex:1;
+}
+#tip>div {
+					display:flex;
+					/* justify-content:space-around;  */
+					margin-top:20px;
+}
+#tip section:not(:last-child) {
+					padding-right:15px; 
+}
+#tip img {
+				/* width:100%; */
+}
+#tip h3 {
+				font-size:1rem; 
+				text-align:center;
+				padding-top:5px;
+}
+#tip section:last-child h3 {
+				letter-spacing:-0.3pt;
+}
+#tip a:hover {
+				color:#3d63a7; 
+				text-decoration:underline;
+}
+
+/*******VR관광*******/
+#VR {
+			flex:0.8;
+}
+#VR> a {
+			display:block;
+			margin-top:18px;
+			/* text-align:center; */
+}
+
+/*******공지사항*******/
+#notice {
+				flex:0.8;
+}
+#notice>ul {
+				/* list-style:none;   */
+				/* margin-top:10px; */
+}
+#notice li {
+					/* position:relative;  */
+					/* padding:3px;  */
+					/* border-bottom:1px dashed #666; */
+}
+#notice a {
+				/* display:inline-block;  */
+				/* color:#333; */
+			}
+#notice a:hover {
+					/* color:red; */
+}
+#notice span {
+					/* position:absolute;  */
+					/* right:0; */
+}
+
+/*******바로가기*******/
+#quick {
+				/* flex:0.8; */
+}
+#quick> h2{
+				/* display:none; */
+}
+#quick> a {
+				/* display:block;  */
+				/* margin-top:45px;  */
+				/* text-align:center; */
+}
+
+/*******공지사항*******/
+#notice {
+				/* flex:0.8; */
+}
+#notice>ul {
+				list-style:none;
+				margin-top:10px; 
+}
+#notice li {
+				/* position:relative;  */
+				padding:3px;
+				border-bottom:1px dashed #666;
+}
+#notice a {
+				/* display:inline-block;  */
+				/* color:#333; */
+}
+#notice a:hover {
+				 color:red;
+}
+#notice span {
+				/* position:absolute;  */
+				/* right:0; */
+				float:right;
+}
+
+
+/*******하단*******/
+footer {
+				/* height:100px;  */
+				background:#e6e6e6;
+				/* color:black;  */
+				display:flex;
+				padding:5px 20px;
+				align-items:center;
+				font-size:0.9rem;
+}
+footer p {				
+				flex:1;
+}
+footer a {
+				/* display:inline;  */
+				/* color:black; */
+}
+footer a:hover {
+				color:black;
+				text-decoration:underline;
+}
+footer span {
+				/* color:#999;  */
+				/* padding:0 5px;  */
+				/* display:inline-block;  */
+				/* transform:translateY(-1px); */
+}
+footer select {
+				/* padding:4px 8px 2px 8px; */
+}
